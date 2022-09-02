@@ -34,6 +34,7 @@ func search2 (input : Double , input2 : Double){
 func search1 (input : String ){
     var c = 0
     var g =  dic.count
+    print("Films that  has \(input) tag :")    
     while c < g {
         var i = dic[c]["tags"]! as! [String]
         
@@ -42,7 +43,7 @@ func search1 (input : String ){
                 var nn = dic[c]
                 print("""
                 film Name: \(nn["film"]!)
-                ------------------------------------
+                ____________________________
                 """
                 )
             }}
@@ -103,7 +104,8 @@ func Update(oldfilm:String , film:String , tags:[String] , rating: Double ) {
 // to update film data
 // Update(oldfilm:"Dreams" , film:"Truth" , tags:["Animation"] , rating: 1.1 )
 
-// to search fil by film name
+// to search film by film name
+// print("Full Data of Film :")
 // var searsh = search(input: "Dreams")
 // print("""
 // Film Name: \(searsh["film"]!)
@@ -112,8 +114,9 @@ func Update(oldfilm:String , film:String , tags:[String] , rating: Double ) {
 // """
 // )
 
-// to search fil by rate of film
-search2(input:2.1, input2:2.5)
+// to search film by rate of film
+// print("Films within your rate:")
+// search2(input:2.1, input2:2.5)
 
 // to search fil by tag of film
 // search1(input:"Biography")
